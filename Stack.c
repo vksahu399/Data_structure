@@ -1,6 +1,6 @@
 # include<stdio.h>
-# include<stdlib.h>
-# define CAPACITY 5
+# include<stdlib.h>   // Use only for exit function
+# define CAPACITY 5   // Micro for size of stack 
 int stack[CAPACITY],top=-1;
 void push (int );
 int pop();
