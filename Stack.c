@@ -2,10 +2,10 @@
 # include<stdlib.h>   // Use only for exit function
 # define CAPACITY 5   // Micro for size of stack 
 int stack[CAPACITY],top=-1;
-void push (int );
-int pop();
-int peek();
-int traverse();
+void push (int );       //Use for insert element into the stack
+int pop();              //Use for delete element from stack
+int peek();             //Similar to pop function but not exact
+int traverse();         //Display all element present in stack
 
 int main()
 {
@@ -40,7 +40,7 @@ int main()
 }
 void push(int ele)
 {
-    if(top==CAPACITY-1)
+    if(top==CAPACITY-1)    //Check if stack is full or not 
     {
         printf("Overflow !!\n");
     }else
@@ -52,7 +52,7 @@ void push(int ele)
 int pop()
 {
     int e;
-    if(top==-1)
+    if(top==-1)     //Check if any element present in stack or not
     {
         printf("Underflow !!\n");
     }else
